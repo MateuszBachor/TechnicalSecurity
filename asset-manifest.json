@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/TechnicalSecurity/static/css/main.3733ebbd.css",
+    "main.css": "/TechnicalSecurity/static/css/main.38ab9af5.css",
     "main.js": "/TechnicalSecurity/static/js/main.c325e417.js",
     "static/js/787.7314762b.chunk.js": "/TechnicalSecurity/static/js/787.7314762b.chunk.js",
     "static/media/1-7.png": "/TechnicalSecurity/static/media/1-7.33fde933e7702af119cc.png",
@@ -11,12 +11,12 @@
     "static/media/slick.ttf": "/TechnicalSecurity/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/TechnicalSecurity/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TechnicalSecurity/index.html",
-    "main.3733ebbd.css.map": "/TechnicalSecurity/static/css/main.3733ebbd.css.map",
+    "main.38ab9af5.css.map": "/TechnicalSecurity/static/css/main.38ab9af5.css.map",
     "main.c325e417.js.map": "/TechnicalSecurity/static/js/main.c325e417.js.map",
     "787.7314762b.chunk.js.map": "/TechnicalSecurity/static/js/787.7314762b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3733ebbd.css",
+    "static/css/main.38ab9af5.css",
     "static/js/main.c325e417.js"
   ]
 }
