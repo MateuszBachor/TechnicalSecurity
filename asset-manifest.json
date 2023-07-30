@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TechnicalSecurity/static/css/main.ccef054a.css",
+    "main.js": "/TechnicalSecurity/static/js/main.c325e417.js",
+    "static/js/787.7314762b.chunk.js": "/TechnicalSecurity/static/js/787.7314762b.chunk.js",
+    "static/media/1-7.png": "/TechnicalSecurity/static/media/1-7.33fde933e7702af119cc.png",
+    "static/media/EliteImg.png": "/TechnicalSecurity/static/media/EliteImg.fa07489d2d57268c80dd.png",
+    "static/media/Hotline.png": "/TechnicalSecurity/static/media/Hotline.8d58bae610a606eeb938.png",
+    "static/media/slick.svg": "/TechnicalSecurity/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/TechnicalSecurity/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/TechnicalSecurity/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/TechnicalSecurity/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/TechnicalSecurity/index.html",
+    "main.ccef054a.css.map": "/TechnicalSecurity/static/css/main.ccef054a.css.map",
+    "main.c325e417.js.map": "/TechnicalSecurity/static/js/main.c325e417.js.map",
+    "787.7314762b.chunk.js.map": "/TechnicalSecurity/static/js/787.7314762b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccef054a.css",
+    "static/js/main.c325e417.js"
+  ]
+}
