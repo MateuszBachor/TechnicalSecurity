@@ -19,7 +19,7 @@ code {
   width: 100%;
   margin-top: 50px;
   margin: auto;
-  height: 65vh;
+  height: 50vh;
 }
 .slick-slider > div {
   display: grid !important;
