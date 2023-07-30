@@ -1,0 +1,62 @@
+.opinion {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.opinionCard {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  background-color: rgb(253, 253, 253);
+  color: black;
+  height: 284px;
+  width: 60%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12), 2px 4px 3px rgba(0, 0, 0, 0.14),
+    0px 0px 6px rgba(0, 0, 0, 0.2);
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);s */
+  padding: 5%;
+  border-radius: 6px;
+  margin-left: 15%;
+  margin-bottom: 10px;
+}
+.content {
+  font-size: 16.3px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* margin-bottom: 15px; */
+  display: flex;
+  justify-content: flex-start;
+  height: 85%;
+}
+.clientSign {
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: end;
+}
+
+@media (max-width: 900px) {
+  .opinionCard {
+    width: 66%;
+    margin-left: 14%;
+  }
+  .opinion {
+    margin-bottom: 15%;
+  }
+}
+@media (max-width: 450px) {
+  .opinionCard {
+    width: 66%;
+    margin: auto;
+  }
+  .content {
+    font-size: 14.5px;
+  }
+}
+.trustedUs {
+  margin: 0px 5%;
+}

@@ -1,0 +1,17 @@
+button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+.trustedUs {
+  margin-top: 5%;
+  /* margin-bottom: 5%; */
+}

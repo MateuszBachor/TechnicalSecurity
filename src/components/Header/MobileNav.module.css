@@ -1,0 +1,24 @@
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menuItems {
+  margin-top: 10px;
+}
+
+.menuItems ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItems li {
+  margin-bottom: 5px;
+}
+
+.menuItems a {
+  color: #333;
+  text-decoration: none;
+}
