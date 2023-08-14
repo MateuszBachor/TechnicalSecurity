@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             Strzelin Jana Pawła II 12/1
           </span>
-          <span style={{ height: "50px", marginTop: "40px", fontSize: "21px" }}>
+          <span style={{ height: "50px", marginTop: "40px", fontSize: "19px" }}>
             <img src={Hotline} alt="" className={styles.hotlineImg} />
             71 234 234 12
           </span>

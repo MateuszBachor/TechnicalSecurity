@@ -19,11 +19,18 @@ code {
   width: 100%;
   margin-top: 50px;
   margin: auto;
-  height: 50vh;
+  /* height: 50vh; */
+  height: auto;
 }
 .slick-slider > div {
   display: grid !important;
   place-items: center !important;
+}
+@media (max-width: 1024px) {
+  .slick-slide > div {
+    /* height: 70vh; */
+    height: auto;
+  }
 }
 @media (max-width: 500px) {
   .slick-slide > div {
@@ -43,4 +50,9 @@ code {
     color: white !important;
     font-size: 0px !important;
   }
+}
+.slick-dots button {
+  width: 0px !important;
+  height: 0px !important;
+  color: white !important;
 }

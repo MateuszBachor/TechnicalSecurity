@@ -6,10 +6,9 @@
   padding-right: 10%;
   padding-left: 10%;
   padding-bottom: 5%;
+  padding-top: 5%;
   text-align: center;
   background: #fefefe;
-  box-shadow: 1px -1px 20px rgba(0, 0, 0, 0.12),
-    -13px -11px 1px rgba(0, 0, 0, 0.14), -16px -11px 1px rgb(0 0 0 / 20%);
 }
 
 .offerCards {

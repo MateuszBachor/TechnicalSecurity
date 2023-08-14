@@ -12,6 +12,11 @@ button:hover {
   background-color: #555;
 }
 .trustedUs {
-  margin-top: 5%;
-  /* margin-bottom: 5%; */
+  margin-top: 50px;
+  margin-bottom: 5%;
+}
+@media (max-width: 900px) {
+  .trustedUs {
+    margin-top: 15%;
+  }
 }

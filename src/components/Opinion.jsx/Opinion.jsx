@@ -80,7 +80,7 @@ const Opinion = () => {
   };
   return (
     <div className={styles.opinion}>
-      <h2>Opinie</h2>
+      <h2 style={{ marginBottom: "60px" }}>Opinie</h2>
       <Slider {...settings}>
         {ClientOpinion.map((e) => {
           console.log(e);

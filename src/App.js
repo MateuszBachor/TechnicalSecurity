@@ -8,6 +8,7 @@ import TrustedUs from "./components/TrustedUs/TrustedUs";
 import Footer from "./components/Footer/Footer";
 import Opinion from "./components/Opinion.jsx/Opinion";
 import Slogan from "./components/Slogan/Slogan";
+import MapComponent from "./components/MapComponent/MapComponent";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       <Header />
       <Banner />
       <OurOffer />
-      <TrustedUs />
+      <MapComponent />
       <Slogan />
       <Opinion />
+      <TrustedUs />
       <Footer />
     </div>
   );

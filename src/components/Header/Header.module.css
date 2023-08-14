@@ -22,12 +22,12 @@
   max-width: calc(120px + 2vw);
   width: auto;
   height: 100%;
-
   margin-left: 50px;
 }
 @media (max-width: 500px) {
   .logo {
     margin-left: 10px;
+    padding-top: 0px;
   }
   .header {
     height: 7vh;

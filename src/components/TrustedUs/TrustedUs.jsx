@@ -52,15 +52,15 @@ const TrustedUs = () => {
   };
   return (
     <div className={styles.trustedUs}>
-      <h2>Zaufali nam</h2>
+      <h3 style={{ marginBottom: "50px" }}>Zaufali nam</h3>
       <Slider {...settings}>
         <div>
           <img
             src="https://www.imsec.pl/images/design/logo.png"
             alt=""
             style={{
-              width: "200px",
-              height: "100px",
+              width: "150px",
+              height: "50px",
               margin: "auto",
             }}
           />
@@ -69,28 +69,28 @@ const TrustedUs = () => {
           <img
             src="https://lazienkionline.pl/hpeciai/7cfaa9f9a1f4238f6b616a7e00ffd485/pol_pl_Zestaw-2w1-TECE-stelaz-podtynkowy-do-WC-mata-SSM006-1926_6.jpg"
             alt=""
-            style={{ width: "200px", height: "100px", margin: "auto" }}
+            style={{ width: "150px", height: "50px", margin: "auto" }}
           />
         </div>
         <div>
           <img
             src="https://lazienkionline.pl/hpeciai/7cfaa9f9a1f4238f6b616a7e00ffd485/pol_pl_Zestaw-2w1-TECE-stelaz-podtynkowy-do-WC-mata-SSM006-1926_6.jpg"
             alt=""
-            style={{ width: "200px", height: "100px", margin: "auto" }}
+            style={{ width: "150px", height: "50px", margin: "auto" }}
           />
         </div>
         <div>
           <img
             src="https://lazienkionline.pl/hpeciai/7cfaa9f9a1f4238f6b616a7e00ffd485/pol_pl_Zestaw-2w1-TECE-stelaz-podtynkowy-do-WC-mata-SSM006-1926_6.jpg"
             alt=""
-            style={{ width: "200px", height: "100px", margin: "auto" }}
+            style={{ width: "150px", height: "50px", margin: "auto" }}
           />
         </div>
         <div>
           <img
             src="https://lazienkionline.pl/hpeciai/7cfaa9f9a1f4238f6b616a7e00ffd485/pol_pl_Zestaw-2w1-TECE-stelaz-podtynkowy-do-WC-mata-SSM006-1926_6.jpg"
             alt=""
-            style={{ width: "200px", height: "100px", margin: "auto" }}
+            style={{ width: "150px", height: "50px", margin: "auto" }}
           />
         </div>
       </Slider>

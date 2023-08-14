@@ -45,7 +45,7 @@ const OurOffer = () => {
     const handleScroll = () => {
       const { scrollTop, clientHeight } = document.documentElement;
 
-      if (scrollTop > clientHeight / 1.5) {
+      if (scrollTop > clientHeight / 3) {
         setIsCentered(true);
       }
     };
