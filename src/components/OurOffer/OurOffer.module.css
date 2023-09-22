@@ -1,20 +1,22 @@
 .offerSection {
-  font-size: 21px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 12%;
+  padding-left: 12%;
   padding-bottom: 5%;
-  padding-top: 5%;
+  padding-top: 2%;
   text-align: center;
   background: #fefefe;
 }
-
+.offerSectionTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
 .offerCards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0px, 2fr));
+  gap: 25px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -25,42 +27,50 @@
   justify-content: flex-end;
   box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.12), 2px 4px 18px rgba(0, 0, 0, 0.14),
     0px 0px 20px rgba(0, 0, 0, 0.2);
-  text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.9); /* Efekt cienia */
+  text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.9);
   border-radius: 6px;
-  height: 14em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: box-shadow 0.5s ease;
-}
-@media (max-width: 500px) {
-  .offerCard {
-    height: 18em;
-    margin-bottom: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .offerSection {
-    padding: 5px;
-  }
-  .offerTitle {
-    max-height: 80px;
-  }
-  .description {
-    height: 100%;
-    padding-top: 20px;
-  }
+  border-radius: 10px;
+  /* height: 42vh; */
+  position: relative;
 }
 
-.offerCard h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.imgOfferCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
-
-.offerCard p {
-  font-size: 18px;
+.btnReadmore {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  right: 50px;
+  bottom: 26px;
+  border-radius: 20px;
+  padding: 6px 10px 6px 15px;
+  text-shadow: none;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: 0.3s ease-in-out 0s;
+  font-weight: 600;
 }
-
+.iconReadmore {
+  font-size: 19px;
+  display: flex;
+  margin-left: 5px;
+}
+.btnReadmore:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background: #fff;
+  color: #000;
+}
 .description {
   display: none;
   opacity: 0;
@@ -71,9 +81,11 @@
   text-align: left;
   padding-left: 5%;
   height: 100%;
+  font-size: 12px;
 }
 .description p {
-  margin: 15px 0;
+  margin: 8px 1px;
+  font-size: 15px;
 }
 @keyframes fall-transform {
   0% {
@@ -108,22 +120,60 @@
 .offerTitle {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  background: linear-gradient(rgba(35, 40, 91, 0.5), #0a1a45);
+  align-items: self-end;
+  justify-content: left;
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   width: 100%;
   height: 100%;
-  max-height: 60px;
+  height: 60px;
+  padding-top: 1px;
+  padding-bottom: 6px;
 }
 .readMore {
-  margin: 8px 5px;
   padding: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
   display: flex;
+  justify-content: center;
+  align-items: self-end;
   background: none;
-  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.readMore:hover {
-  background: none;
+.readMore button {
+  font-size: 15px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: scale 0.4s;
+}
+.readMore button:hover {
+  background: transparent;
+  scale: 1.03;
+}
+@media (max-width: 500px) {
+  .offerCards {
+    grid-template-columns: repeat(4, minmax(70px, 2fr));
+  }
+  .offerCard {
+    height: 18em;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .offerSection {
+    padding: 5px;
+  }
+  .offerTitle {
+    max-height: 80px;
+  }
+  .description {
+    height: 100%;
+    padding-top: 20px;
+  }
 }
