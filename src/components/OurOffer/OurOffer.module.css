@@ -9,7 +9,10 @@
   text-align: center;
   background: #fefefe;
 }
-
+.offerSectionTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
 .offerCards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0px, 2fr));
@@ -32,6 +35,7 @@
   transition: box-shadow 0.5s ease;
   border-radius: 10px;
   /* height: 42vh; */
+  position: relative;
 }
 
 .imgOfferCard {
@@ -39,7 +43,34 @@
   height: 100%;
   border-radius: 10px;
 }
-
+.btnReadmore {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  right: 50px;
+  bottom: 26px;
+  border-radius: 20px;
+  padding: 6px 10px 6px 15px;
+  text-shadow: none;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: 0.3s ease-in-out 0s;
+  font-weight: 600;
+}
+.iconReadmore {
+  font-size: 19px;
+  display: flex;
+  margin-left: 5px;
+}
+.btnReadmore:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background: #fff;
+  color: #000;
+}
 .description {
   display: none;
   opacity: 0;
