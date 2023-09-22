@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styles from "./OurOffer.module.css";
-import img from "./SerwisImg.png";
+import ServiceImg from "./ServiceImg.png";
+import MonitoringImg from "./MonitoringImg.png";
+import CleaningImg from "./CleaningImg.png";
+import SecurityImg from "./SecurityImg.png";
 
 const OurOffer = () => {
   const offers = [
@@ -8,38 +11,26 @@ const OurOffer = () => {
       title: "Bezpieczeństwo fizyczne",
       description:
         "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
-      backgroundImage: img,
+      backgroundImage: ServiceImg,
     },
     {
       title: "Ochrona danych",
       description:
         "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
-      backgroundImage: img,
+      backgroundImage: MonitoringImg,
     },
     {
       title: "Monitoring 24/7",
 
       description:
         "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
-      backgroundImage: img,
+      backgroundImage: CleaningImg,
     },
     {
       title: "Bezpieczeństwo fizyczne",
       description:
         "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
-      backgroundImage: img,
-    },
-    {
-      title: "Sprzątnie",
-      description:
-        "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
-      backgroundImage: img,
-    },
-    {
-      title: "Serwis",
-      description:
-        "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów CCTV i wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
-      backgroundImage: img,
+      backgroundImage: SecurityImg,
     },
   ];
   // const offers = [
@@ -104,7 +95,11 @@ const OurOffer = () => {
       <div className={styles.offerCards}>
         {offers.map((offer, index) => (
           <div className={styles.offerCard} key={index}>
-            <img src={offer.backgroundImage} alt="" />
+            <img
+              className={styles.imgOfferCard}
+              src={offer.backgroundImage}
+              alt=""
+            />
           </div>
           // <div
           //   className={styles.offerCard}

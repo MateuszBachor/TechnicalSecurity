@@ -11,9 +11,9 @@
   width: 80%;
   height: 80%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-image: url("C:\Users\mateu\technicalsecurity\src\components\WhyUs2\whyus.jpg");
+  /* background-image: url("C:\Users\mateu\technicalsecurity\src\components\WhyUs2\whyus.jpg"); */
 }
 
 .reasonList {
