@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 .slick-slide > div {
   display: flex;
   justify-content: center;
@@ -19,7 +15,6 @@ code {
   width: 100%;
   margin-top: 50px;
   margin: auto;
-  /* height: 50vh; */
   height: auto;
 }
 .slick-slider > div {
@@ -28,7 +23,6 @@ code {
 }
 @media (max-width: 1024px) {
   .slick-slide > div {
-    /* height: 70vh; */
     height: auto;
   }
 }
