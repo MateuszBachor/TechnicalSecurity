@@ -52,7 +52,7 @@ const ContactForm = () => {
           "contact_service",
           "contact_form",
           form.current,
-          "8kG79hdvoxSmSInre"
+          ""
         )
         .then(
           (result) => {
@@ -72,7 +72,7 @@ const ContactForm = () => {
         "contact_service",
         "contact_form",
         form.current,
-        "8kG79hdvoxSmSInre"
+        ""
       )
       .then(
         (result) => {
