@@ -15,8 +15,6 @@ button:hover {
   margin-top: 50px;
   margin-bottom: 5%;
 }
-@media (max-width: 900px) {
-  .trustedUs {
-    margin-top: 15%;
-  }
+.trustedUs img {
+  cursor: pointer;
 }

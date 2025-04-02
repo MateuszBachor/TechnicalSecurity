@@ -1,0 +1,152 @@
+.aboutUs {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 63vh;
+  margin-top: 1%;
+}
+.aboutUsImageContainer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position-x: 80%;
+  border-radius: 10px;
+  height: 100%;
+  width: 22vw;
+  margin-top: 5%;
+}
+.aboutUsTitleContainer {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding-right: 5%;
+}
+.aboutUsTitle {
+  font-size: 1.1em;
+  display: flex;
+}
+.aboutUsSubtitle {
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 1%;
+  display: flex;
+}
+
+.aboutUsDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-right: 10%;
+  margin-top: 35px;
+  text-align: left;
+  justify-content: flex-start;
+}
+.aboutUsDescriptionText {
+  font-size: calc(10px + 1vh);
+  text-align: justify;
+}
+.btnReadMoreContainer {
+  display: flex;
+  justify-content: center;
+}
+.btnReadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 4px 4px 4px 8px;
+  text-shadow: none;
+  background: transparent;
+  border: 2px solid #142658;
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease-in-out 0s;
+  font-weight: 600;
+  width: 18%;
+  margin-top: 3%;
+}
+.iconReadmore {
+  font-size: 19px;
+  display: flex;
+  margin-left: 5px;
+}
+.btnReadmore:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background: #142658;
+  color: #ffffff;
+}
+.fatFont {
+  font-weight: 600;
+}
+@media (min-width: 1800px) {
+  .aboutUsImageContainer {
+    background-position-x: 25%;
+  }
+  .aboutUs {
+    margin-top: 1%;
+  }
+  .btnReadmore {
+    width: 13%;
+    font-size: 0.75em;
+  }
+}
+@media (min-width: 1200px) {
+  .aboutUs {
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutUsSubtitle {
+    margin-left: 5%;
+  }
+  .aboutUsTitle {
+    font-size: 0.9em;
+    margin-left: 5%;
+  }
+  .aboutUs {
+    flex-direction: column;
+    height: auto;
+    margin: 2% 0;
+  }
+
+  .aboutUsDescriptionContainer {
+    width: 90%;
+    margin: auto;
+  }
+  .btnReadmore {
+    width: auto;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 600px) {
+  .aboutUsSubtitle {
+    font-size: 1.4em;
+  }
+  .aboutUs {
+    flex-direction: column;
+    height: auto;
+    margin: 8% 0;
+  }
+  .aboutUsTitle {
+    font-size: 0.9em;
+  }
+  .aboutUsDescriptionText {
+    font-size: calc(10px + 1 * ((100vw - 320px) / 680));
+  }
+}
+@media (max-width: 400px) {
+  .aboutUsDescriptionText {
+    font-size: 0.6em;
+  }
+}
+@media (max-width: 325px) {
+  .aboutUsDescriptionText {
+    font-size: 0.8em;
+  }
+}

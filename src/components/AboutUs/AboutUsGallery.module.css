@@ -1,0 +1,401 @@
+.aboutUsBanner {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 90%;
+  background-position-x: 15%;
+  object-fit: cover;
+  height: 50vh;
+  margin-top: 10vh;
+}
+.aboutUsBannerTitle {
+  font-size: calc(22px + 8 * ((100vw - 320px) / 650));
+  font-weight: bold;
+  text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.9);
+  color: #ffff;
+  padding-left: 16%;
+}
+.aboutUsGallery {
+  margin-top: 10%;
+  width: 80%;
+}
+.aboutUsGalleryTitle {
+  font-size: 1.8em;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-weight: 600;
+}
+.galleryCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 2fr));
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.galleryCard {
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.12), 2px 4px 18px rgba(0, 0, 0, 0.14),
+    0px 0px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.9);
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: box-shadow 0.5s ease;
+  border-radius: 2px;
+  height: 45vh;
+  width: 100%;
+  transition: 0.3s ease-in-out 0s;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .galleryCards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  }
+}
+@media (max-width: 768px) {
+  .aboutUsGalleryTitle {
+    font-size: 1.5em;
+  }
+  .aboutUsGallery {
+    width: 90%;
+    padding: 0;
+    margin-top: 15%;
+  }
+  .galleryCards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  }
+}
+@media (max-width: 500px) {
+  .aboutUsGallery {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 400px) {
+  .aboutUsGallery {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 380px) {
+  .aboutUsGalleryTitle {
+    margin-top: 8vh;
+  }
+  .aboutUsGallery {
+    width: 100%;
+    margin-top: 25%;
+  }
+}
+@media (max-width: 321px) {
+  .aboutUsGalleryTitle {
+    font-size: 1em;
+  }
+}
+@media (max-width: 300px) {
+  .aboutUsGalleryTitle {
+    margin-top: 12vh;
+  }
+}
+
+/******************* AboutUsDescription **********/
+.AboutUsDescriptionContainer {
+  width: 100vw;
+  height: 80vh;
+  padding-top: 35vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: left;
+  background-color: #ffff;
+  align-items: center;
+  /* background-image: url("./AboutUsImages/AboutUsImgNr5.jpeg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+.AboutUsDescriptionCard {
+  width: 33rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 4px 4px 15px rgba(#000, 0.15);
+  position: relative;
+  color: #434343;
+  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.12), 2px 4px 18px rgba(0, 0, 0, 0.14),
+    0px 0px 20px rgba(0, 0, 0, 0.2);
+  margin-left: 10%;
+  margin-top: 3vh;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.AboutUsDescriptionCard .AboutUsDescriptionCardContainer {
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.AboutUsDescriptionCard .AboutUsDescriptionCardHeader {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+}
+
+.AboutUsDescriptionCard .AboutUsDescriptionCardBody {
+  font-size: 0.8em;
+}
+
+.AboutUsDescriptionCard::before {
+  position: absolute;
+  top: 2rem;
+  right: -0.4199rem;
+  content: "";
+  background: #283593;
+  height: 28px;
+  width: 28px;
+  transform: rotate(45deg);
+}
+
+.AboutUsDescriptionCard::after {
+  position: absolute;
+  content: attr(data-label);
+  top: 11px;
+  right: -14px;
+  padding: 0.5rem;
+  width: 10rem;
+  background: #3949ab;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+@media (min-width: 1600px) {
+  .AboutUsDescriptionCard {
+    width: 32em;
+    font-size: 1.6em;
+    margin-top: -10vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .AboutUsDescriptionContainer {
+    background-position-x: 50%;
+    justify-content: center;
+    height: 22vh;
+    padding-top: 105vh;
+    margin-top: -13vh;
+    margin-bottom: 28vh;
+    /* background-image: url("./AboutUsImages/AboutUsBannerImgMobile.jpeg"); */
+  }
+  .AboutUsDescriptionCard {
+    width: 80%;
+    margin-left: 0%;
+    padding: 0;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardContainer {
+    padding: 2.5rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .AboutUsDescriptionContainer {
+    margin-bottom: 35vh;
+  }
+  .AboutUsDescriptionCard {
+    width: 90%;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardContainer {
+    padding: 2.9rem 1rem 1rem 1rem;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardHeader {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .AboutUsDescriptionCard {
+    width: 88%;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardContainer {
+    padding: 5rem 1rem 1rem 1rem;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardHeader {
+    font-size: 1.2em;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardBody {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .AboutUsDescriptionCard .AboutUsDescriptionCardContainer {
+    padding: 10vh 1rem 1rem 1rem;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardHeader {
+    font-size: 1.5rem;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardBody {
+    font-size: 16px;
+  }
+}
+@media (max-width: 321px) {
+  .AboutUsDescriptionCard .AboutUsDescriptionCardHeader {
+    font-size: 1rem;
+  }
+  .AboutUsDescriptionCard .AboutUsDescriptionCardBody {
+    font-size: 12px;
+  }
+}
+
+/****************** MODAL WINDOW *********************/
+.modalWindowContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modalImg {
+  height: 80vh;
+  width: 80vh;
+  position: absolute;
+}
+.btnCloseModal {
+  position: absolute;
+  top: 2%;
+  right: 5.5%;
+  color: white;
+  background-color: transparent;
+  font-size: 2em;
+  transition: scale 0.5s;
+}
+.btnCloseModal:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+.prevImgBtn {
+  font-size: 2em;
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  color: white;
+  cursor: pointer;
+}
+.nextImgBtn {
+  font-size: 2em;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  color: white;
+  cursor: pointer;
+}
+/******** AboutUsFeatures *******/
+.aboutUsFeatures {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: justify;
+}
+.aboutUsFeaturesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.aboutUsFeaturesImage {
+  margin-left: 5%;
+  background-image: url("./../MapComponent/dolnyslask.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.aboutUsFeatures ul {
+  width: 50%;
+  list-style: none;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+.aboutUsFeatures li {
+  margin-bottom: 5%;
+  font-size: 0.8em;
+}
+
+.aboutUsSloganContainer {
+  background-image: url("./AboutUsImages/aboutUsSloganImg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.aboutUsSloganContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: calc(1px + 1.8vw);
+  color: white;
+  padding-left: 8vw;
+  /* font-weight: bold; */
+  text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 5, 48, 0.3);
+  font-family: "Century Gothic";
+}
+@media (min-width: 1600px) {
+  .aboutUsFeatures {
+    align-items: center;
+  }
+  .aboutUsFeatures li {
+    font-size: 1em;
+  }
+}
+@media (min-width: 844px) {
+  .aboutUsSloganContainer {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 844px) {
+  .aboutUsFeaturesImage {
+    margin-left: 0;
+    width: 100%;
+  }
+  .aboutUsSloganContainer {
+    height: 22vh;
+  }
+  .aboutUsSloganContent {
+    padding-left: 16vw;
+    padding-right: 5%;
+    font-size: 16px;
+  }
+  .aboutUsFeaturesContainer {
+    flex-direction: column;
+  }
+  .aboutUsFeatures ul {
+    width: 80%;
+    padding-left: 0;
+    margin: 2vh 0;
+  }
+}

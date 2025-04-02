@@ -1,5 +1,4 @@
 .sloganContainer {
-  background-image: url("C:\Users\mateu\technicalsecurity\src\components\Slogan\1-7.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -13,7 +12,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-size: calc(10px + 2vw);
+  font-size: calc(1px + 2vw);
   color: white;
   padding-left: 50vw;
   padding-right: 3vw;
@@ -30,10 +29,10 @@
 }
 @media (max-width: 844px) {
   .sloganContainer {
-    height: 30vh;
+    height: 22vh;
   }
   .sloganContent {
-    padding-left: 40vw;
-    font-size: 20px;
+    padding-left: 30vw;
+    font-size: 14px;
   }
 }

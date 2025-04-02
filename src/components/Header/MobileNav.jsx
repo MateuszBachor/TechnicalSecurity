@@ -1,39 +1,93 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./MobileNav.module.css";
-import { Sling as Hamburger } from "hamburger-react";
+import { Divide as Hamburger } from "hamburger-react";
+import { ImPhone } from "react-icons/im";
 
 const MobileMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState();
 
-  const toggleMenu = () => {
+  const handleClick = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className={`${styles.mobileMenu}`}>
-      <div onClick={toggleMenu} style={{ marginRight: "8px" }}>
-        <Hamburger />
+    <>
+      <div
+        className={styles.hamburger}
+        onClick={handleClick}
+        style={{ marginRight: "8px" }}
+      >
+        <Hamburger toggled={isOpen} toggle={setIsOpen} />
       </div>
-
-      {isOpen && (
-        <nav className={styles.menuItems}>
+      <div className={`${styles.mobileMenu} ${isOpen ? styles.active : ""}`}>
+        <nav className={`${styles.menuItems} ${isOpen ? styles.active : ""}`}>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <NavLink to="/" onClick={() => setIsOpen(false)}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <a href="#about">About</a>
+              <NavLink to="/O-firmie" onClick={() => setIsOpen(false)}>
+                O firmie
+              </NavLink>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <NavLink to="/Oferta/Serwis" onClick={() => setIsOpen(false)}>
+                Zabezpieczenia
+              </NavLink>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <NavLink
+                to={"/Oferta/Uslugi-porzadkowe"}
+                onClick={() => setIsOpen(false)}
+              >
+                Usługi porządkowe
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/Oferta/Ochrona"} onClick={() => setIsOpen(false)}>
+                Ochrona
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/Oferta/Monitoring"}
+                onClick={() => setIsOpen(false)}
+              >
+                Monitoring
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/Kontakt"} onClick={() => setIsOpen(false)}>
+                Kontakt
+              </NavLink>
+            </li>
+            <li>
+              <a
+                className={styles.callMe}
+                href="tel:+48713922724"
+                onClick={() => setIsOpen(false)}
+              >
+                <span style={{ color: "white" }}>
+                  <ImPhone />
+                </span>
+                <span
+                  style={{
+                    marginLeft: "7px",
+                    color: "white",
+                    fontSize: "1em",
+                  }}
+                >
+                  71 39 22 724
+                </span>
+              </a>
             </li>
           </ul>
         </nav>
-      )}
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./Header.module.css";
+import logo from "./888logo2.webp";
 import { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import MobileMenu from "./MobileNav";
+import { NavLink } from "react-router-dom";
 import Nav from "./Nav";
 
 const Header = () => {
@@ -9,7 +12,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 568);
+      setIsMobile(window.innerWidth < 768);
     };
 
     handleResize();
@@ -24,11 +27,16 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img
-          src="https://ochrona888.com.pl/wp-content/uploads/2022/10/cropped-888-logo-01.png"
-          alt=""
-          style={{ width: "auto", height: "auto" }}
-        />
+        <NavLink to="/">
+          <img
+            src={logo}
+            alt=""
+            style={{ width: "100%", height: "9vh" }}
+            onClick={() => {
+              scroll.scrollToTop();
+            }}
+          />
+        </NavLink>
       </div>
       {isMobile ? <MobileMenu /> : <Nav />}
     </header>

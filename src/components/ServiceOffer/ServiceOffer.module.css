@@ -1,0 +1,244 @@
+.serviceOfferContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80vw;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+}
+.serviceOffer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* .otherServiceOffer {
+  width: 100%;
+} */
+.serviceOfferImg {
+  display: flex;
+  width: 25vw;
+  height: 82vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+.serviceOfferTowerImg {
+  display: flex;
+  width: 25vw;
+  height: 82vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.serviceOfferArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60vw;
+  text-align: left;
+}
+.otherServiceOfferArticle {
+  width: 100%;
+}
+.serviceOfferTitle {
+  display: flex;
+  font-size: 1.7em;
+  margin-left: 2%;
+}
+.decorationTitle {
+  width: 0.8vw;
+  height: 4.3vh;
+  margin-right: 1vw;
+  background-color: rgb(37, 37, 156);
+  margin-top: 0.3vh;
+}
+.serviceOfferDescription {
+  padding-left: 2%;
+  text-align: justify;
+  font-size: calc(1px + 1vw);
+  margin-top: 3%;
+}
+/* .otherServiceOfferDescription {
+  width: 100% !important;
+  padding-left: 4%;
+} */
+.serviceOfferDescription li {
+  margin-bottom: 5%;
+}
+.serviceOfferDescription ul {
+  margin-top: 3%;
+}
+/************ MEDIA ************/
+@media (min-width: 1200px) {
+}
+@media (max-width: 1200px) {
+  .serviceOffer {
+    width: 100%;
+  }
+  .serviceOfferDescription {
+    font-size: 0.7em;
+  }
+  .serviceOfferImg {
+    background-position-x: 70%;
+  }
+
+  .decorationTitle {
+    margin-top: 0.8vh;
+  }
+}
+@media (max-width: 1024px) {
+  .serviceOffer {
+    /* padding: 3% 0% 3% 3%; */
+  }
+  .serviceOfferDescription {
+    font-size: 0.7em;
+  }
+  .serviceOfferImg {
+    background-position-x: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .serviceOffer {
+    flex-direction: column;
+  }
+  .serviceOfferArticle {
+    width: 84vw;
+    margin-top: 1vh;
+  }
+  .serviceOfferTitle {
+    font-size: 1.2em;
+    margin-top: 1%;
+  }
+  .serviceOfferDescription {
+    font-size: 0.7em;
+    padding-right: 2%;
+  }
+  .serviceOfferDescription ul {
+    padding-left: 10%;
+  }
+  .serviceOfferImg {
+    width: 82vw;
+    height: 35vh;
+    margin-top: 0;
+    background-position-y: 20%;
+  }
+  .serviceOfferTowerImg {
+    width: 81vw;
+    height: 35vh;
+    margin-top: 0;
+    margin-left: 3%;
+    background-position-y: 20%;
+  }
+  .decorationTitle {
+    height: 3.7vh;
+    margin-top: 0;
+  }
+}
+@media (max-width: 550px) {
+  .serviceOfferContainer {
+    margin-top: 12vh;
+  }
+}
+@media (max-width: 480px) {
+  .serviceOffer {
+    flex-direction: column;
+    /* padding: 5% 0% 5% 5%; */
+  }
+  .serviceOfferArticle {
+    width: 100%;
+    margin-top: 0vh;
+  }
+  .serviceOfferTitle {
+    font-size: 1em;
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+  .serviceOfferDescription {
+    font-size: 0.7em;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+    margin-top: 2%;
+  }
+  .serviceOfferImg {
+    width: 78vw;
+    height: 30vh;
+    margin-top: 0;
+    background-position-y: 0%;
+  }
+  .serviceOfferTowerImg {
+    width: 78vw;
+    height: 30vh;
+    margin-top: 0;
+  }
+  .decorationTitle {
+    height: 2.8vh;
+    margin-right: 2vw;
+  }
+}
+@media (max-width: 320px) {
+  .serviceOfferContainer {
+    align-items: flex-start;
+    width: 80%;
+  }
+  .serviceOffer {
+    width: 95%;
+  }
+  .serviceOfferImg {
+    width: 74vw;
+  }
+  .serviceOfferTowerImg {
+    width: 74vw;
+  }
+}
+@media (max-width: 300px) {
+  .serviceOfferContainer {
+    width: 95%;
+    align-items: center;
+  }
+  .serviceOffer {
+    align-items: center;
+  }
+  .serviceOfferImg {
+    width: 90vw;
+    margin-left: 0;
+  }
+  .serviceOfferTowerImg {
+    width: 90vw;
+    margin-left: 0;
+  }
+  .serviceOfferTitle {
+    margin-left: 3%;
+  }
+}
+/************************/
+.otherServices {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.otherServices ul {
+  display: flex;
+  flex-direction: column;
+}
+.otherSerivcesIcon {
+  font-size: 25vh;
+  color: #142658;
+}
+@media (max-width: 768px) {
+  .otherServices {
+    flex-direction: column;
+  }
+  .otherSerivcesIcon {
+    font-size: 18vh;
+  }
+}

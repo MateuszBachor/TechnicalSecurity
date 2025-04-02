@@ -1,0 +1,37 @@
+.OfferPage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+@media (max-width: 300px) {
+  .OfferPage {
+    justify-content: center;
+  }
+}
+
+.offerBanner {
+  display: flex;
+  display: flex;
+  width: 80vw;
+  height: 60vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+.notFoundPage {
+  /* height: 50vh; */
+}
+.notFoundTitle {
+  margin-top: 30vh;
+}
+.AboutUsPage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.contactPage {
+  margin-top: 11vh;
+}

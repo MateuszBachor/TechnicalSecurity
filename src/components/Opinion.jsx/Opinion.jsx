@@ -50,7 +50,7 @@ const Opinion = () => {
         settings: {
           slidesToShow: 1,
           speed: 800,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -60,7 +60,7 @@ const Opinion = () => {
         settings: {
           slidesToShow: 1,
           speed: 800,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
           dots: true,
         },
@@ -80,12 +80,11 @@ const Opinion = () => {
   };
   return (
     <div className={styles.opinion}>
-      <h2 style={{ marginBottom: "60px" }}>Opinie</h2>
+      <h2>Opinie</h2>
       <Slider {...settings}>
-        {ClientOpinion.map((e) => {
-          console.log(e);
+        {ClientOpinion.map((e, index) => {
           return (
-            <div>
+            <div key={index}>
               <CardOpinion Object={e} />
             </div>
           );

@@ -1,57 +1,92 @@
+import { NavLink } from "react-router-dom";
 import styles from "./OurOffer.module.css";
-import ServiceImg from "./ServiceImg.png";
-import MonitoringImg from "./MonitoringImg.png";
-import CleaningImg from "./CleaningImg.png";
-import SecurityImg from "./SecurityImg.png";
+import ServiceImg from "./servicewebp.webp";
+import MonitoringImg from "./monitoringwebp.webp";
+import CleaningImg from "./cleaningwebp.webp";
+import SecurityImg from "./securitywebp.webp";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const OurOffer = () => {
   const offers = [
     {
-      title: "Bezpieczeństwo fizyczne",
-      description:
-        "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
+      title: "USŁUGI TECHNICZNE",
+      description: [
+        "Systemy alarmowe",
+        "CCTV",
+        "Mobilne wieże monitorujące",
+        "Usługi elektryczne ",
+        "Instalacje domofonowe",
+      ],
       backgroundImage: ServiceImg,
+      url: "/Oferta/Serwis",
     },
     {
-      title: "Ochrona danych",
-      description:
-        "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
+      title: "MONITORING 24/7",
+      description: [
+        "Wideo weryfikacja z analityką obrazu",
+        "Całodobowy nadzór elektroniczny z natychmiastową reakcją załóg interwencyjnych",
+        "Wykwalifikowani Operatorzy ",
+      ],
       backgroundImage: MonitoringImg,
+      url: "/Oferta/Monitoring",
     },
     {
-      title: "Monitoring 24/7",
-
-      description:
-        "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
-      backgroundImage: CleaningImg,
-    },
-    {
-      title: "Bezpieczeństwo fizyczne",
-      description:
-        "- Montaż oraz serwis systemów alarmowych i napadowych\n- Montaż oraz serwis systemów telewizji przemysłowej CCTV i  wideomonitoringu\n- Montaż oraz serwis instalacji domofonowych i wideodomofonów\n- Pomoc techniczna i  konserwacje\n- Usługi elektryczne",
+      title: "OCHRONA",
+      description: [
+        "Konwój wartości pieniężnych",
+        "Licencjonowane załogi interwencyjne",
+        "Ochrona stacjonarna",
+        "Podjazdy kontrolne",
+      ],
       backgroundImage: SecurityImg,
+      url: "/Oferta/Ochrona",
+    },
+    {
+      title: "USŁUGI PORZĄDKOWE",
+      description: [
+        "Sprzątanie biur i lokali",
+        "Sprzątanie po remoncie",
+        "Pielęgnacja zieleni",
+        "DDD Dezynfekcja  Dezynsekcja Deratyzacja",
+      ],
+      backgroundImage: CleaningImg,
+      url: "/Oferta/Uslugi-porzadkowe",
     },
   ];
 
   return (
     <section className={styles.offerSection}>
-      <span className={styles.offerSectionTitle}>Sprawdź naszą oferte!</span>
       <div className={styles.offerCards}>
         {offers.map((offer, index) => (
-          <div className={styles.offerCard} key={index}>
-            <img
-              className={styles.imgOfferCard}
-              src={offer.backgroundImage}
-              alt=""
-            ></img>
-            <div className={styles.btnReadmore}>
-              Dowiedz się więcej{" "}
-              <span className={styles.iconReadmore}>
-                <MdKeyboardDoubleArrowRight />
-              </span>{" "}
+          <NavLink key={index} to={offer.url}>
+            <div
+              loading="lazy"
+              className={styles.offerCard}
+              key={index}
+              style={{ backgroundImage: `url(${offer.backgroundImage})` }}
+            >
+              <div className={styles.ContentOfferCard}>
+                <div className={styles.offerTitle}>{offer.title}</div>
+                <ul className={styles.offerList}>
+                  {offer.description.map((e, index) => {
+                    return (
+                      <li key={index} className={styles.offerListElem}>
+                        {e}
+                      </li>
+                    );
+                  })}
+                </ul>
+                <div className={styles.btnReadmoreContainer}>
+                  <div className={styles.btnReadmore}>
+                    Zobacz więcej{" "}
+                    <span className={styles.iconReadmore}>
+                      <MdKeyboardDoubleArrowRight />
+                    </span>{" "}
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </NavLink>
         ))}
       </div>
     </section>

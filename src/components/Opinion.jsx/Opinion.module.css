@@ -12,19 +12,20 @@
   /* justify-content: space-around; */
   background-color: rgb(253, 253, 253);
   color: black;
-  height: 284px;
+  height: 43vh;
   width: 60%;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12), 2px 4px 3px rgba(0, 0, 0, 0.14),
     0px 0px 6px rgba(0, 0, 0, 0.2);
   /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);s */
-  padding: 5%;
+  padding: 6%;
   border-radius: 6px;
   margin-left: 15%;
   margin-bottom: 10px;
   border-top: 1px solid whitesmoke;
+  text-align: center;
 }
 .content {
-  font-size: 16.3px;
+  font-size: 0.9em;
   font-family: Georgia, "Times New Roman", Times, serif;
   /* margin-bottom: 15px; */
   display: flex;
@@ -38,13 +39,41 @@
   justify-content: flex-end;
   flex-direction: column;
   text-align: end;
+  padding-top: 5%;
 }
-
-@media (max-width: 900px) {
+@media (min-width: 1800px) {
+  .opinionCard {
+    height: 37 vh;
+  }
+  .content {
+    font-size: 1.2em;
+  }
+  .clientSign {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 1800px) {
+  .opinionCard {
+    height: 43vh;
+  }
+}
+@media (max-width: 1400px) {
+  .opinionCard {
+    height: 58vh;
+  }
+}
+@media (max-width: 1220px) {
+  .opinionCard {
+    height: 68vh;
+  }
+}
+@media (max-width: 1020px) {
   .opinionCard {
     width: 66%;
     margin-left: 14%;
+    height: 43vh;
   }
+
   .opinion {
     margin-bottom: 15%;
     margin-top: 15%;
@@ -61,4 +90,10 @@
 }
 .trustedUs {
   margin: 0px 5%;
+}
+@media (max-width: 321px) {
+  .opinionCard {
+    height: 54vh;
+    min-height: 350px;
+  }
 }

@@ -1,18 +1,33 @@
 .footer {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 5;
+  background: white;
 }
 .contactContainer {
   color: #fff;
   padding: 1% 10%;
   display: flex;
-  background-color: #180a41;
+  background-color: #142658;
   justify-content: space-between;
+  position: relative;
+  z-index: 5;
 }
 .contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.contact a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: calc(9px + 1vh);
+  transition: color 0.3s;
+  height: 50px;
+  color: white;
+  /* font-weight: bold; */
 }
 .contact span {
   display: flex;
@@ -20,12 +35,26 @@
   cursor: pointer;
   font-size: calc(9px + 1vh);
   transition: color 0.3s;
-  height: 60px;
-  font-weight: bold;
+  height: 50px;
+  color: white;
 }
-.contact span:hover {
-  color: rgb(99, 133, 200);
+.contact a:hover {
+  color: rgb(99, 133, 200) !important;
+  cursor: pointer;
 }
+.office {
+  display: flex;
+  align-items: center;
+  font-size: calc(9px + 1vh);
+  transition: color 0.3s;
+  height: 50px;
+}
+.hotlineImgDiv {
+  height: 50px;
+  margin-top: 35%;
+  transition: filter 0.3s;
+}
+
 .hotlineImg {
   height: 75px !important;
   background-color: transparent;
@@ -33,6 +62,11 @@
   cursor: pointer;
   margin-right: 20px;
   margin-left: 30px;
+  transition: color 0.3s;
+}
+.hotlineImgDiv:hover {
+  filter: invert(57%) sepia(70%) saturate(1201%) hue-rotate(194deg)
+    brightness(83%) contrast(86%);
 }
 .hotlineImg img {
   max-height: 100%;
@@ -51,6 +85,7 @@
   justify-content: space-evenly;
   align-items: flex-end;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 .contactForm input {
   height: 40px;
@@ -62,8 +97,8 @@
 
 .contactForm textarea {
   height: 100px;
-  min-height: 50px;
-  max-height: 300px;
+  min-height: 15vh;
+  max-height: 60vh;
   margin: 10px 0px;
   padding-left: 10px;
   padding-top: 10px;
@@ -75,19 +110,21 @@
   border: none;
   display: flex;
   background-color: white;
-  border-radius: 15px;
-  color: black;
-  font-weight: 540;
-  width: 100px;
-  height: 40px;
+  border-radius: 10px;
+  color: rgb(130, 130, 130);
+  font-size: 0.9em;
+  width: 85px;
+  height: 30px;
   justify-content: center;
   align-items: center;
   transition: scale 0.4s;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .contactForm button:hover {
   scale: 1.03;
+  background-color: white;
+  color: black;
 }
 .contactIcon {
   display: flex;
@@ -129,6 +166,27 @@
 }
 
 /*********** media ************/
+@media (min-width: 1800px) {
+  .footer {
+    margin-top: 1%;
+    margin-right: 2%;
+  }
+  .eliteImg {
+    height: 12vh;
+  }
+  .contact span {
+    margin: 3% 0;
+  }
+  .hotlineImgDiv {
+    margin-top: 35% !important;
+  }
+  .contactForm input {
+    font-size: 1em;
+  }
+  .contactForm textarea {
+    font-size: 1.35em;
+  }
+}
 @media (max-width: 735px) {
   .info {
     font-size: 14px;
@@ -139,7 +197,33 @@
   .contactContainer {
     padding: 10% 5%;
   }
+  .contact span {
+    font-size: 21px;
+  }
+  .contact h2 {
+    font-size: 20px;
+  }
+  .office {
+    font-size: calc(6px + 1vh);
+  }
+  .contactForm h3 {
+    margin-left: 10px !important;
+  }
+  .contactForm textarea {
+    height: 10vh !important;
+    min-height: 10vh;
+    margin: 5px 0;
+  }
+  .hotlineImgDiv {
+    margin-top: 30%;
+  }
 }
+@media (min-width: 572px) and (max-width: 675px) {
+  .contactForm h3 {
+    margin-top: 0px !important;
+  }
+}
+
 @media (max-width: 575px) {
   .footer {
     display: flex;
@@ -153,18 +237,25 @@
   .contact {
     margin-left: 10px;
   }
+  .contact a {
+    font-size: calc(6px + 1vh);
+  }
   .contactForm {
     width: 95%;
     margin-left: 0px;
     margin-top: 50px;
   }
-  .contactForm h4 {
+  .contactForm input {
+    height: 30px;
+    margin: 5px 0;
+  }
+  .contactForm h3 {
     margin-left: 10px !important;
   }
   .contactForm button {
-    height: 35px;
+    height: 27px;
     font-size: 16px;
-    width: 80px;
+    width: 70px;
   }
   .info {
     margin-top: 10px;
@@ -175,16 +266,23 @@
   .infoFlex {
     font-size: calc(6px + 1vw);
     margin-top: 0px;
+    max-width: 127px;
   }
   .infoTitle {
     font-size: calc(7px + 1vw);
     margin: 0;
   }
   .eliteImg {
-    max-height: 10vh;
+    max-height: 12vh;
+  }
+  .contact span {
+    font-size: 14px;
+  }
+  .hotlineImg {
+    height: 60px !important;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 355px) {
   .eliteImg {
     display: none;
   }
